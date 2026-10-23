@@ -1,0 +1,137 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="theme-color" content="#f8f3eb">
+<title>Fathima & Farzin — Wedding Invitation</title>
+<meta name="description" content="You are warmly invited to celebrate the wedding of Fathima and Farzin on 24 December 2026 at Sunny Convention Centre, Paravur.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600&family=Great+Vibes&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+<style>
+:root{--paper:#f8f4ed;--ink:#51443a;--muted:#8a7b6d;--rose:#c77f94;--rose-pale:#ead0d5;--gold:#b99568;--card:#fffdfa;--line:#e5d4c9;--shadow:rgba(67,43,35,.12)}
+*{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;background:#3a2024;color:var(--ink);font-family:Inter,Arial,sans-serif;padding:18px}
+.invite{max-width:560px;min-height:calc(100vh - 36px);margin:0 auto;position:relative;overflow:hidden;border:7px double var(--gold);border-radius:34px;background:var(--paper);box-shadow:0 20px 70px #160b0d66}
+.invite:before,.invite:after{content:"";position:absolute;width:140px;height:140px;pointer-events:none;opacity:.8;background:radial-gradient(ellipse at 30% 40%,#d7c0e7 0 8%,transparent 9%),radial-gradient(ellipse at 58% 27%,#b5c5a1 0 13%,transparent 14%),radial-gradient(ellipse at 18% 68%,#d7b3a0 0 11%,transparent 12%);filter:blur(.2px)}
+.invite:before{top:-45px;left:-42px;transform:rotate(-25deg)}.invite:after{bottom:-48px;right:-40px;transform:rotate(155deg)}
+.inner{position:relative;z-index:1;padding:38px 25px 32px;text-align:center}
+.theme-toggle{display:flex;justify-content:flex-end;margin-bottom:28px}
+button,.button{font:inherit;cursor:pointer;border:1px solid var(--muted);border-radius:999px;background:transparent;color:var(--ink);padding:10px 17px;text-decoration:none;display:inline-flex;align-items:center;justify-content:center;gap:8px}
+.eyebrow{font-family:"Cormorant Garamond",serif;font-style:italic;color:var(--muted);font-size:clamp(19px,4vw,25px);margin:8px 0 24px}
+h1{font-family:"Cormorant Garamond",serif;font-weight:400;font-size:clamp(48px,12vw,70px);line-height:.9;letter-spacing:.15em;margin:0;text-transform:uppercase}
+.amp{font-family:"Great Vibes",cursive;color:var(--rose);font-size:66px;line-height:1.1;margin:8px 0}
+.invite-copy{font-family:"Cormorant Garamond",serif;font-size:clamp(22px,5vw,29px);line-height:1.25;color:var(--muted);max-width:390px;margin:28px auto 20px}
+.rule{height:1px;max-width:260px;margin:25px auto;background:linear-gradient(90deg,transparent,var(--rose-pale),var(--rose),var(--rose-pale),transparent)}
+.section-label{font-family:"Cormorant Garamond",serif;letter-spacing:.25em;font-size:24px;margin:18px 0 15px}
+.countdown{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:9px;max-width:420px;margin:0 auto 30px}
+.timebox{border:1px solid var(--rose-pale);border-radius:15px;background:var(--card);padding:13px 3px 11px;box-shadow:0 2px 0 #ead0d555}
+.timebox strong{display:block;font:400 clamp(24px,6vw,36px) "Cormorant Garamond",serif}.timebox span{font-size:12px;color:var(--muted)}
+.venue{font:500 25px "Cormorant Garamond",serif;margin:16px 0 5px}.location{color:var(--muted);font-size:14px;margin:0 0 14px}
+.script{font:48px "Great Vibes",cursive;color:var(--rose);margin:0 0 18px}
+.primary{background:#b98970;border-color:#b98970;color:white;font-size:17px;letter-spacing:.08em;padding:16px 45px;min-width:190px;box-shadow:0 8px 20px #b989702b}
+.rsvp{margin:34px auto 8px;max-width:420px;text-align:left;background:var(--card);border:1px solid var(--line);border-radius:20px;padding:23px;scroll-margin-top:18px}
+.rsvp h2{font:400 34px "Cormorant Garamond",serif;text-align:center;margin:0 0 4px}.rsvp .sub{text-align:center;color:var(--muted);font-size:13px;margin:0 0 20px}
+label{display:block;font-size:13px;font-weight:600;margin:14px 0 7px}input,select,textarea{width:100%;font:inherit;font-size:15px;border:1px solid var(--line);border-radius:10px;padding:12px;background:var(--paper);color:var(--ink)}.choices{display:flex;gap:10px}.choices label{flex:1;font-weight:400;margin:0;border:1px solid var(--line);border-radius:10px;padding:12px;display:flex;align-items:center;gap:8px}.choices input{width:auto;accent-color:var(--rose)}
+.submit{width:100%;margin-top:18px}.status{font-size:13px;line-height:1.5;text-align:center;margin:12px 0 0;color:var(--muted);min-height:18px}.smallprint{font-size:11px;color:var(--muted);text-align:center;margin-top:16px}.footer{font:italic 18px "Cormorant Garamond",serif;color:var(--muted);margin-top:26px}
+body.dark{--paper:#211e20;--ink:#f1e7dc;--muted:#c0ada0;--rose:#df9bad;--rose-pale:#684853;--gold:#b99568;--card:#2d282a;--line:#55464a;--shadow:rgba(0,0,0,.3);background:#110e10}
+body.dark .invite{background:var(--paper)}body.dark input,body.dark select,body.dark textarea{background:#211e20}
+@media(max-width:380px){body{padding:8px}.invite{border-radius:25px;border-width:5px}.inner{padding:24px 16px}.countdown{gap:5px}.timebox{padding:10px 1px}.timebox span{font-size:11px}.rsvp{padding:17px}}
+@media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}*{animation:none!important;transition:none!important}}
+</style>
+</head>
+<body>
+<main class="invite">
+<div class="inner">
+<div class="theme-toggle"><button id="themeButton" type="button" aria-label="Toggle dark mode">☾ Dark</button></div>
+<p class="eyebrow">Together with their families</p>
+<h1>Fathima</h1><div class="amp">&amp;</div><h1>Farzin</h1>
+<p class="invite-copy">request the pleasure of your company as they begin forever</p>
+<div class="rule"></div>
+<p class="section-label">SAVE THE DATE</p>
+<div class="countdown" aria-label="Countdown to the wedding">
+<div class="timebox"><strong id="days">—</strong><span>Days</span></div>
+<div class="timebox"><strong id="hours">—</strong><span>Hrs</span></div>
+<div class="timebox"><strong id="minutes">—</strong><span>Min</span></div>
+<div class="timebox"><strong id="seconds">—</strong><span>Sec</span></div>
+</div>
+<p class="venue">Sunny Convention Centre</p>
+<p class="location">Paravur</p>
+<p style="font:18px 'Cormorant Garamond',serif;margin:0 0 16px">24 December 2026 · 4:30 <span id="timeSuffix">PM</span></p>
+<a class="button" href="https://maps.app.goo.gl/73jf3154kYvxyKFv7?g_st=ac" target="_blank" rel="noopener">⌖ Get directions</a>
+<p class="script">With love</p>
+<a class="button primary" href="#rsvp">RSVP</a>
+
+<section class="rsvp" id="rsvp">
+<h2>Kindly Respond</h2>
+<p class="sub">Please let us know if you can celebrate with us.</p>
+<form id="rsvpForm">
+<label for="guestName">Your name *</label>
+<input id="guestName" name="name" autocomplete="name" required maxlength="120" placeholder="Enter your full name">
+<label>Will you attend? *</label>
+<div class="choices">
+<label><input type="radio" name="attendance" value="Attending" required> Joyfully accept</label>
+<label><input type="radio" name="attendance" value="Not attending" required> Regretfully decline</label>
+</div>
+<div id="partyWrap">
+<label for="partySize">Number attending</label>
+<select id="partySize" name="partySize"><option value="1">1 person</option><option value="2" selected>2 people</option><option value="3">3 people</option><option value="4">4 people</option><option value="5">5 people</option><option value="6">6 people</option></select>
+</div>
+<label for="phone">Phone number (optional)</label>
+<input id="phone" name="phone" type="tel" autocomplete="tel" maxlength="30" placeholder="Your contact number">
+<label for="note">Message (optional)</label>
+<textarea id="note" name="note" rows="2" maxlength="500" placeholder="Leave a short message"></textarea>
+<button class="primary submit" type="submit">Submit RSVP</button>
+<p id="formStatus" class="status" role="status" aria-live="polite">Please submit only one response per household.</p>
+</form>
+<p class="smallprint">Your response will be shared with the hosts for wedding planning.</p>
+</section>
+<p class="footer">We can't wait to celebrate with you.</p>
+</div>
+</main>
+<script>
+// SETUP: Paste your deployed Google Apps Script web-app URL between the quotes below.
+const RSVP_ENDPOINT = "https://script.google.com/macros/s/AKfycbyY77wO9FHvx_aqmGO9zE4wGsGRKsVWAHXKetw0UoIZ6bV2G97Gwq3HEmaVOpZeA0_JVw/exechttps://script.google.com/macros/s/AKfycbyY77wO9FHvx_aqmGO9zE4wGsGRKsVWAHXKetw0UoIZ6bV2G97Gwq3HEmaVOpZeA0_JVw/exec";
+
+const weddingDate = new Date("2026-12-24T16:30:00+05:30");
+function updateCountdown(){
+  let diff = Math.max(0, weddingDate.getTime() - Date.now());
+  const d = Math.floor(diff/86400000); diff%=86400000;
+  const h = Math.floor(diff/3600000); diff%=3600000;
+  const m = Math.floor(diff/60000); const s = Math.floor((diff%60000)/1000);
+  document.getElementById("days").textContent=d;
+  document.getElementById("hours").textContent=String(h).padStart(2,"0");
+  document.getElementById("minutes").textContent=String(m).padStart(2,"0");
+  document.getElementById("seconds").textContent=String(s).padStart(2,"0");
+}
+updateCountdown(); setInterval(updateCountdown,1000);
+
+const themeButton=document.getElementById("themeButton");
+themeButton.addEventListener("click",()=>{document.body.classList.toggle("dark");const dark=document.body.classList.contains("dark");themeButton.textContent=dark?"☀ Light":"☾ Dark";document.querySelector('meta[name="theme-color"]').content=dark?"#211e20":"#f8f3eb";});
+
+document.querySelectorAll('input[name="attendance"]').forEach(el=>el.addEventListener("change",()=>{
+  document.getElementById("partyWrap").hidden=el.value==="Not attending" && el.checked;
+}));
+
+const form=document.getElementById("rsvpForm"), status=document.getElementById("formStatus");
+form.addEventListener("submit",async e=>{
+  e.preventDefault();
+  if(RSVP_ENDPOINT.startsWith("PASTE_")){
+    status.textContent="The invitation is ready, but RSVP collection is not connected yet. Follow the setup guide to connect your Google Sheet.";
+    return;
+  }
+  const submit=form.querySelector('button[type="submit"]');
+  submit.disabled=true; status.textContent="Submitting your response…";
+  const data=Object.fromEntries(new FormData(form).entries());
+  data.submittedAt=new Date().toISOString();
+  try{
+    await fetch(RSVP_ENDPOINT,{method:"POST",mode:"no-cors",headers:{"Content-Type":"text/plain;charset=utf-8"},body:JSON.stringify(data)});
+    status.textContent="Thank you! Your response has been sent. If you are unsure, please contact the hosts to confirm.";
+    form.reset(); document.getElementById("partyWrap").hidden=false;
+  }catch(err){
+    status.textContent="We couldn't send your response. Please check your connection and try again, or contact the hosts.";
+  }finally{submit.disabled=false;}
+});
+</script>
+</body>
+</html>
